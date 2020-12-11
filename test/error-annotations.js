@@ -27,7 +27,7 @@ var test = require('tape');
     head.appendChild(style);
   }
 
-  ['javascript', 'coffee', 'json', 'lua', 'xml'].forEach(createEditorElem);
+  ['javascript', 'coffee', 'json', 'lua', 'xml', 'siddhi'].forEach(createEditorElem);
   loadStyle();
 
   require('./fixtures/javascript-editor');
@@ -35,6 +35,7 @@ var test = require('tape');
   require('./fixtures/json-editor');
   require('./fixtures/lua-editor');
   require('./fixtures/xml-editor');
+  require('./fixtures/siddhi-editor');
 }()
 
 test('error annotations provided by inlined worker', function (t) {
